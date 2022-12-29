@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(fonts/Roboto/Roboto-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(fonts/Roboto/Roboto-LightItalic.ttf) format('truetype');
+}
+
+/* Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+    color-scheme: dark-light;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select {
+    font: inherit;
+    color: inherit;
+}
+
+/* Reset */
+
+.content.top,
+.header-flex {
+    background-color: #141b24;
+    color: white;
+}
+
+.content.bottom {
+    background-color: #E5E7EB;
+}
+
+header.header-flex {
+    display: flex;
+    justify-content: space-around;
+    min-height: 4rem;
+    align-items: center;
+}
+
+.header-flex .Logo {
+    font-family: 'Roboto-Bold';
+    font-size: 2rem;
+    flex: 1 1 auto;
+    padding-left: 1.3rem;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex: 2 1 auto;
+}
+
+.navlink:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.content.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 80vh;
+    padding-bottom: 5rem;
+}
+
+.top-left h1 {
+    font-family: 'Roboto-Black';
+    font-size: 2.5rem;
+}
+
+p.top-text {
+    color: rgba(236, 236, 236, 0.904)
+}
+
+.top-right {
+    flex: 1 1 auto;
+    width: 50%;
+    padding: 3rem 3rem;
+}
+
+.top-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-left {
+    flex: 1 1 auto;
+    width: 50%;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-left button {
+    margin-top: 0.5rem;
+    color: white;
+    background-color: #2a78f5;
+    border: none;
+    border-radius: 10px;
+    align-self: flex-start;
+    padding: 0.4rem 1.5rem;
+}
+
+.content.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+    padding-bottom: 6rem;
+}
+
+.content.middle h2 {
+    font-size: 2rem;
+    font-family: 'Roboto-Black';
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-row {
+    display: flex;
+    min-height: 60%;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 10rem;
+}
+
+.image-box {
+    width: 10rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.image-box img {
+    flex: 1 1 auto;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 0.15rem solid #2a78f5;
+}
+
+.content.bottom {
+    min-height: 60vh;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+.quote .quote-text {
+    font-size: 2rem;
+    font-family: 'Roboto-Italic';
+    text-align: justify;
+}
+
+.quote .quote-cred {
+    font-size: 1.2rem;
+    font-family: 'Roboto-Black';
+    align-self: flex-end;
+}
+
+.content.cta {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-flex {
+    display: flex;
+    width: 80%;
+    height: 40%;
+    background-color: #023fa1;
+    border-radius: 10px;
+    color: white;
+    padding: 2rem 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-text h3 {
+    font-family: 'Roboto-Bold';
+    font-size: 1.25rem;
+}
+
+.cta-flex button {
+    background-color: transparent;
+    border: 0.125rem solid white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
